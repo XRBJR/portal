@@ -1,0 +1,28 @@
+<%- include('partials/header.html') %>
+
+
+<section class="noticia">
+    <div class="center">
+        <div class="noticia-single">
+            <h2><%= noticia ? noticia.titulo : '' %></h2>
+            <div class="autor-nome">
+                <span>Por <%= noticia ? noticia.autor : '' %></span>
+            </div>
+            
+            <br>
+            <div>
+                <img style="width: 100%;" src="<%- noticia ? noticia.imagem : '' %>" alt="">
+            </div>
+            <br>
+            <%- noticia ? noticia.conteudo : '' %>
+
+        </div>
+       
+    </div>
+</section>
+
+
+<%- include('partials/footer.html') %>
+
+</body>
+</html>
